@@ -1,10 +1,17 @@
-export default function Post(){
+export default function Post({title,content, bonus }){
     return(
-        <div style={{padding:"10px", border:"solid teal 5px", background:"white", borderRadius: "10px",
-        boxShadow:"0px 5px 13px rgb(0, 0, 0, 0.4", margin:"25px"}}>
-            <h2>Welcome To our Home Page</h2>
+        <div style={{
+            padding:"10px", 
+            border:"solid teal 5px", 
+            background:"white", borderRadius: "10px",
+            boxShadow:"0px 5px 13px rgb(0, 0, 0, 0.4", 
+            margin:"25px"
+                     }}>
+
+            <h2>{title}</h2>
+            <p>{content}</p>
             <hr/>
-            <p>Your are in the right place to learn DEV</p>
+            <p>{bonus}</p>
         </div>
     )
 }
